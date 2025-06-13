@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="utilities.ExtendReportsManager" />
+	</listeners>
+
+
+	<test thread-count="5" name="master">
+
+		<parameter name="os" value="Windows"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+
+
+		<classes>
+			
+			<!-- <class name="com.internet_Banking_Projects_testCases.TC_003_LoginWithDDT" />-->
+			
+			<class name="com.internet_Banking_Projects_testCases.TC_001_HomepageDisplayedTest" />
+			<class name="com.internet_Banking_Projects_testCases.TC_002_LoginTest" />
+			<class name="com.internet_Banking_Projects_testCases.TC_004_NewCustmerTest" />
+			<class name="com.internet_Banking_Projects_testCases.TC_005_MiniStatementTest" />
+			<class name="com.internet_Banking_Projects_testCases.TC_006_LogoutTest" />
+			
+				
+		</classes>
+	</test> <!--
+	master -->
+</suite> <!--
+Suite -->
